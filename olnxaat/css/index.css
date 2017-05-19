@@ -1,0 +1,243 @@
+body {
+	background-color: lightgoldenrodyellow;
+}
+
+a:visited {
+    color: blue;
+}
+
+header {
+	width: 100%;
+	height: 40px;
+	background-color: red;
+	position: relative;
+}
+
+div#fejlec_nev {
+	width: 20%;
+	height: 100%;
+	background-color: lawngreen;
+	position: absolute;
+	left: 10%;
+	
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+div#fejlec_regBelepes {
+	width: 30%;
+	height: 100%;
+	position: absolute;
+    right: 10%;
+}
+
+div#fejlec_regBelepes_reg {
+	width: 50%;
+	height: 100%;
+	background-color: lightgreen;
+	position: absolute;
+    left: 0%;
+	
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+div#fejlec_regBelepes_Belepes {
+	width: 50%;
+	height: 100%;
+	background-color: greenyellow;
+	position: absolute;
+    right: 0%;
+	
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+#fejlec_nev:hover {
+	background-color: slateblue;
+    color: white;
+}
+#fejlec_regBelepes_reg:hover {
+	background-color:  slateblue;
+    color: white;
+}
+#fejlec_regBelepes_Belepes:hover {
+	background-color:  slateblue;
+    color: white;
+}
+
+nav {
+	width: 80%;
+	position: absolute;
+	left: 10%;
+	text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+	overflow: hidden;
+	position: absolute;
+}
+
+nav li {
+    float: left;
+	box-sizing: border-box;
+	border: 1px solid lightgoldenrodyellow;
+}
+
+nav li a {
+    display: block;
+    background-color: lightblue;
+	padding: 8px 16px;
+    text-decoration: none;
+	text-align: center;
+}
+
+nav li a.active {
+    background-color: blue;
+    color: white;
+}
+
+nav li a:hover:not(.active) {
+    background-color: deepskyblue;
+    color: white;
+}
+
+#index_body2 {
+	width: 90%;
+	height: 500px;
+	position: relative;
+	margin: auto;
+	text-align: center;
+}
+
+aside {
+	width: 32%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	box-sizing: border-box;
+	border-right: 1px solid lightgoldenrodyellow;
+	background-color: paleturquoise;
+}
+
+article {
+	width: 90%;
+	position: relative;
+	margin: auto;
+	text-align: center;
+	background-color: thistle;
+}
+
+section {
+	width: 68%;
+	height: 25%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	box-sizing: border-box;
+	border-bottom: 1px solid lightgoldenrodyellow;
+	background-color: yellow;
+}
+
+.extradiv {
+	width: 68%;
+	height: 75%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	background-color: thistle;
+	
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+
+.extradiv table {
+	width: 100%;
+	height: 60%;
+}
+caption {
+	font-weight: bold;
+	font-size: 25px;
+}
+tbody tr:hover {
+      background-color: purple;
+	  color: yellow;
+}
+
+footer {
+	position: absolute;
+	right: 4%;
+	text-align: center;
+}
+
+@keyframes forgas {
+	0% {
+		-ms-transform: rotate(-3600deg); /* IE 9 */
+    	-webkit-transform: rotate(-360deg); /* Chrome, Safari, Opera */
+    	transform: rotate(-360deg);
+	}
+}
+
+.kuponClass {
+	width: 80%;
+    height: 25%;
+    background-color: orange;
+	font-size: 20px;
+	
+	-ms-transform: rotate(-10deg); /* IE 9 */
+    -webkit-transform: rotate(-10deg); /* Chrome, Safari, Opera */
+    transform: rotate(-10deg);
+		
+	display: flex;
+  	justify-content: center;
+  	align-items: center;
+}
+.kuponClass:hover {
+	background-color:  blue;
+    color: orange;
+	
+	animation: forgas 4s linear 0s;
+}
+.kuponClass2 {
+	text-decoration: none;
+}
+
+@media only screen and (max-width: 610px) {
+	div#fejlec_nev {
+		width: 30%;
+		left: 0;
+	}
+	div#fejlec_regBelepes {
+		width: 70%;
+		height: 100%;
+		position: absolute;
+	    right: 0;
+	}
+	nav li {
+		float: none;
+	}
+	#index_body2 {
+		position: absolute;
+		top: 250px;
+		left: 5%;
+	}
+	article {
+		position: absolute;
+		top: 250px;
+		left: 5%;
+	}
+	footer {
+		position: fixed;
+		bottom: 0;
+	}
+	
+	.kuponClass {
+		font-size: 13px;
+	}
+}

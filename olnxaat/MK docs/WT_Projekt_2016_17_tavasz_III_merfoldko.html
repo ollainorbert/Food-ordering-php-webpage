@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Webtervezés 2017 - III. mérföldkő</title>
+    <style type="text/css">
+      body {
+        font-family: "Segoe UI",Arial,sans-serif;
+        background-color: #fcfcfc;
+        font-size:16px;
+        padding-bottom:50px;
+      }
+      table,td,th {
+        border-collapse: collapse;
+      }
+      th,td {
+        border: 1px solid #000000;
+        padding:5px;
+      }
+      table {
+        margin:10px;
+      }
+      td:first-child {
+        /*font-weight:bold;*/
+      }
+      .stfill {
+        font-weight:bold;
+        color:#DD4132;
+      }
+      .sum {
+        border-top:2px solid #000000;
+      }
+      .sum td {
+        font-weight:bold;
+      }
+      .task {
+        /*font-weight:bold;*/
+      }
+      .subtask {
+        padding-left:25px;
+      }
+      .note {
+        font-size:12px;
+        display:block;
+      }
+      td:nth-child(2),
+      td:nth-child(3) {
+        text-align: center;
+      }
+      tr.header {
+        border-bottom: 2px solid #000000;
+      }
+      .example {
+        font-style: italic;
+        color:grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Web tervezés - III. mérföldkő követelmények</h1>
+    <div>
+      <h2>Általános elvárások</h2>
+      <ul>
+        <li>Az elfogadáshoz egy XAMPP környezetben futó webalkalmazást (PHP, MySQL) kell elkészíteni, melynek tükröznie kell az I. mérföldkőben megadott témát.</li>
+        <li>PHP keretrendszerek használatára nincs lehetőség.</li>
+        <li>Az elkészített feladatot egy zip fájlban kell feltölteni CooSpace-re a követelményekben megfogalmazott határidőig.</li>
+        <li>A zip fájlnak tartalmaznia kell egy mappát, melynek neve a hallgató EHA-kódja (kis betűvel, .sze végződés nélkül). A projekt fájljait ebben kell elhelyezni.</li>
+        <li>Kicsomagolás után a projekt mappáját (EHA-kóddal megegyező mappa név) a XAMPP htdocs mappájába másolva, mindenféle konfiguráció nélkül a weboldalnak működnie kell a <em>localhost/[ehakód]</em> url-t megnyitva böngészőben, ahol az [ehakód] a hallgató EHA-kódját jelenti (szintén kis betűvel, .sze végződés nélkül). (A portszámtól eltekintve.)</li>
+        <li>A fenti elvárások a pontozásban "Formai követelmények" néven szerepelnek.</li>
+        <li>Ezen dokumentumot kitöltve mellékelni kell a beadott zip fájlban.</li>
+        <li>Amennyiben az I. mérföldkő nem került beadásra, az I. mérföldő követelményeit tartalmazó HTML fájlt kitöltve is mellékelni kell.</li>
+        <li>A II. mérföldkőben lepontozott funkciókra a III. mérföldkőben már nem jár pont.</li>
+        <li class="stfill">Beadás előtt ajánlott ellenőrizni a kabinetben, hogy működik-e, mert a nem működő megoldások nem kerülnek pontozásra!</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Hallgató adatai</h2>
+      <ul>
+        <li>Név: <span class="stfill">Ollai Norbert</span></li>
+        <li>EHA-kód: <span class="stfill">OLNXAAT.SZE</span></li>
+        <li>Szak, évfolyam: <span class="stfill">Gazdaságinformatikus, II. évfolyam</span></li>
+        <li>E-mail cím: <span class="stfill">Ollai.Norbert@stud.u-szeged.hu</span></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Pontozás</h2>
+      <p>
+        Ezt a részt az oktató tölti ki.
+      </p>
+      <table>
+        <tr class="header">
+          <th>
+            Részfeladat
+          </th>
+          <th>
+            Szerezhető pontszám
+          </th>
+          <th>
+            Szerzett pontszám
+          </th>
+          <th>
+            Megjegyzés
+          </th>
+        </tr>
+        <tr>
+          <td>
+            Formai követelmények
+          </td>
+          <td>2</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td class="task">
+            Szabványos dinamikusan generált HTML
+            <div class="note">Hibás oldalanként 1 pont levonás. Minimum 0 pont.</div>
+          </td>
+          <td>5</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td class="task" colspan="99">
+            Adatbázis
+          </td>
+        </tr>
+        <tr>
+          <td class="subtask">
+            Legalább 50 rekord az adatbázisban
+          </td>
+          <td>2</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td class="task" colspan="99">
+            Második választott funkció
+            <div class="note">Az első mérföldkőben felsoroltak közül.</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="subtask">
+            A szabad témaválasztás miatt a pontozás <br> a megvalósítás összetettsége alapján történik.
+            <div class="note">Pontot ér:</div>
+            <div class="note">- adatok listázása adatbázisból ciklussal: 2-5p</div>
+            <div class="note">- GET paraméter alapján adat megjelenítés adatbázisból: 1-5p</div>
+            <div class="note">- egyéb ciklus használat: 1-2p</div>
+            <div class="note">- űrlapos adatkezelés megvalósítás: 1-4p</div>
+            <div class="note">- űrlap ellenőrzés PHP oldalon: 1-3p</div>
+            <div class="note">- kép feltöltés: 2-5p</div>
+            <div class="note">- komplex adatbázis művelet: 1-5p</div>
+            <div class="note">- összetett számítás: 1-2p</div>
+            <div class="note">- dátum kezelés: 1-2p</div>
+            <div class="note">- string műveletek: 1-2p</div>
+            <div class="note">- egyéb beépített PHP függvény használat: 1-2p</div>
+            <div class="note">- belépéshez kötött funkció: 1-2p</div>
+          </td>
+          <td>12</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td class="task" colspan="99">
+            Harmadik választott funkció
+            <div class="note">Az első mérföldkőben felsoroltak közül.</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="subtask">
+            A szabad témaválasztás miatt a pontozás <br> a megvalósítás összetettsége alapján történik.
+            <div class="note">Pontot ér:</div>
+            <div class="note">- adatok listázása adatbázisból ciklussal: 2-5p</div>
+            <div class="note">- GET paraméter alapján adat megjelenítés adatbázisból: 1-5p</div>
+            <div class="note">- egyéb ciklus használat: 1-2p</div>
+            <div class="note">- űrlapos adatkezelés megvalósítás: 1-4p</div>
+            <div class="note">- űrlap ellenőrzés PHP oldalon: 1-3p</div>
+            <div class="note">- kép feltöltés: 2-5p</div>
+            <div class="note">- komplex adatbázis művelet: 1-5p</div>
+            <div class="note">- összetett számítás: 1-2p</div>
+            <div class="note">- dátum kezelés: 1-2p</div>
+            <div class="note">- string műveletek: 1-2p</div>
+            <div class="note">- egyéb beépített PHP függvény használat: 1-2p</div>
+            <div class="note">- belépéshez kötött funkció: 1-2p</div>
+          </td>
+          <td>12</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td class="task">
+            Megvalósítás minősége
+            <div class="note">Az alábbiakból lehet összeszedni:</div>
+            <div class="note">- kivételkezelés: 1-2p</div>
+            <div class="note">- objektum orientáltság használata: 1-5p</div>
+            <div class="note">- függvények használata: 1-2p</div>
+            <div class="note">- prepared statement: 1-2p</div>
+            <div class="note">- védelem SQL injection ellen: 1-5p</div>
+          </td>
+          <td>5</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td class="task">
+            Megvalósítás átláthatósága
+            <div class="note">- kód ismétlések elkerülése</div>
+            <div class="note">- logikusan, fájlokba szervezett kód</div>
+            <div class="note">- CSS betöltése külön fájlból</div>
+          </td>
+          <td>2</td><td></td><td></td>
+        </tr>
+        <tr class="sum">
+          <td>Összpontszám:</td>
+          <td>40</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <h2>Megjegyzés</h2>
+      <p>A hallgató opcionális megjegyzése a beadott feladathoz.</p>
+      <p>
+         <span class="stfill">Nincs.</span>
+      </p>
+    </div>
+    <p> Közzétéve: 2017. 03. 22. </p>
+  </body>
+</html>

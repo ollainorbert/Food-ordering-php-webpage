@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Webtervezés 2017 - I. mérföldkő</title>
+    <style type="text/css">
+      body {
+        font-family: "Segoe UI",Arial,sans-serif;
+        background-color: #fcfcfc;
+        font-size:16px;
+        padding-bottom:50px;
+      }
+      table,td,th {
+        border-collapse: collapse;
+      }
+      th,td {
+        border: 1px solid #000000;
+        padding:5px;
+      }
+      table {
+        margin:10px;
+      }
+      td:first-child {
+        /*font-weight:bold;*/
+      }
+      .stfill {
+        font-weight:bold;
+        color:#DD4132;
+      }
+      .sum {
+        border-top:2px solid #000000;
+      }
+      .sum td {
+        font-weight:bold;
+      }
+      .task {
+        /*font-weight:bold;*/
+      }
+      .subtask {
+        padding-left:25px;
+      }
+      .note {
+        font-size:12px;
+        display:block;
+      }
+      td:nth-child(2),
+      td:nth-child(3) {
+        text-align: center;
+      }
+      tr.header {
+        border-bottom: 2px solid #000000;
+      }
+      .example {
+        font-style: italic;
+        color:grey;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Web tervezés - I. mérföldkő követelmények</h1>
+    <div>
+      <h2>Általános elvárások</h2>
+      <ul>
+        <li>A mérföldkő elfogadásához 5 db html oldalt kell ekészíteni a választott témának megfelelően.</li>
+        <li>Az elkészített feladatot egy zip fájlban kell feltölteni CooSpace-re a követelményekben megfogalmazott határidőig.</li>
+        <li>Kicsomagolás után a HTML fájlok böngészőben történő megnyitásával a használt útvonalaknak (css,kép) helyesnek kell lenniük.</li>
+        <li>A mérföldkő kötelező részét képezi a választott téma ismertetése. A továbbiakban az elkészített feladatoknak a választott témának kell megfelelniük.</li>
+        <li>A fenti elvárások a pontozásban "Formai követelmények" néven szerepelnek.</li>
+        <li>Csak működő, látható és értelmes formázások érnek pontot. Például nem ér pontot: fehét háttéren fehér szöveg, CSS animáció ami nem jelenik meg a weboldalon.</li>
+        <li>Ezen dokumentumot kitöltve mellékelni kell a beadott zip fájlban.</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Hallgató adatai</h2>
+      <ul>
+        <li>Név: <span class="stfill">Ollai Norbert</span></li>
+        <li>EHA-kód: <span class="stfill">OLNXAAT.SZE</span></li>
+        <li>Szak, évfolyam: <span class="stfill">Gazdaságinformatikus, II. évfolyam</span></li>
+        <li>E-mail cím: <span class="stfill">Ollai.Norbert@stud.u-szeged.hu</span></li>
+        <li>Használt szabvány: <span class="stfill">HTML5</span> (XHTML 1.0 Strict vagy HTML5)</li>
+      </ul>
+    </div>
+    <div>
+      <h2>Választott téma</h2>
+      <p>A választott téma rövid (5-10 mondat) összefoglalása:</p>
+      <p>
+           A feladatnak egy ételrendelő oldalt választottam.
+           A főoldalon megtekinthető a ételrendelő története,
+           illetve nyitvatartása és a link a kinyomtatható kuponokhoz.<br>
+           Az ételeket többféle szempont alapján tudja listázni illetve sorba rendezni.<br>
+           A felhasználók regisztráció után be tudnak lépni a rendszerbe.
+           Rendelni csak belépett felhasználó tud az ételek közül, amiket kosárba helyez,
+           majd véglegesítheti vagy visszavonhatja a vásárlását.<br>
+           Módosítani tudja az adatait illetve az eddigi és folyamatban lévő rendeléseit
+           vissza tudja nézni.<br>
+      </p>
+      <p>
+        A projektnek kötelező jelleggel tartalmaznia kell fehasználókezelést. <br>
+        Kiemelt funkciók (legalább 3 darab a kötelezőkön kívül):
+      </p>
+      <ul>
+        <li><b>Felhasználó kezelés: regisztráció, belépés</b></li>
+        <li><b>Profil szerkesztés</b></li>
+        <li><b>Ételek listázása, kosárba helyezése, rendelése, visszavonása</b></li>
+        <li><b>Ételek véleményezése</b></li>
+        <li><b>Régebbi illetve folyamatban lévő rendelések listázása</b></li>
+      </ul>
+    </div>
+    <div>
+      <h2>Pontozás</h2>
+      <p>
+        Ezt a részt az oktató tölti ki.
+      </p>
+      <table>
+        <tr class="header">
+          <th>
+            Részfeladat
+          </th>
+          <th>
+            Szerezhető pontszám
+          </th>
+          <th>
+            Szerzett pontszám
+          </th>
+          <th>
+            Megjegyzés
+          </th>
+        </tr>
+        <tr>
+          <td>
+            Formai követelmények
+          </td>
+          <td>3</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td class="task">
+            Szabványos HTML oldalak
+            <span class="note">A minimálisan kötelező 5 oldalnak szabványosnak kell lennie.</span>
+          </td>
+          <td>5</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td class="task" colspan="99">
+            Menü megvalósítás
+            <span class="note">A navigációnak nem kell működnie</span>
+          </td>
+        </tr>
+        <tr>
+          <td class="subtask">
+            Linkek használata
+          </td>
+          <td>1</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td class="subtask">
+            Lista használata
+          </td>
+          <td>1</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td class="subtask">
+            CSS formázás
+            <span class="note">- Az aktuális menüpont eltérő.</span>
+            <span class="note">- Az egér rávitelével a kinézet módosul.</span>
+          </td>
+          <td>1</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td class="task" colspan="99">
+            A weboldal struktúrája
+          </td>
+        </tr>
+        <tr>
+          <td class="subtask">
+            Div elemekkel van kialakítva
+            <span class="note">Fejléc, lábléc, törzs, oldalsáv, menü.</span>
+            <span class="note">HTML5 esetén HTML5 elemek.</span>
+          </td>
+          <td>4</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td class="subtask">
+            Táblázat elemek használata
+          </td>
+          <td>1</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td class="subtask">
+            Űrlap elemek használata
+            <span class="note">Legalább 6 féle beviteli mező.</span>
+          </td>
+          <td>3</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td class="subtask">
+            Kép elem használata
+          </td>
+          <td>1</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td class="task" colspan="99">
+            CSS
+          </td>
+        </tr>
+        <tr>
+          <td class="subtask">
+            Elemkijelölő, azonosítókijelölő, <br>osztálykijelölő, összetett kijelölők használata
+          </td>
+          <td>2</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td class="subtask">
+            Nyomtatható verzió
+            <span class="note">Elég 1 db HTML oldalhoz elkészíteni <br>az órán tanultaknak megfelelően.</span>
+          </td>
+          <td>1</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td class="subtask">
+            Formázás, pozícionálás, méretezés, úsztatás használata
+            <span class="note">A weboldal struktúra elemeinek testreszabása <br>a tanultaknak megfelelően.</span>
+            <span class="note">Például: fix fejléc, többsávos elrendezés, stb.</span>
+          </td>
+          <td>2</td><td></td><td></td>
+        </tr>
+        <tr>
+          <td class="subtask">
+            Dizájn
+            <span class="note">A korábbi részfeladatok teljesítéséhez használt <br>szabályokon felül.</span>
+            <span class="note">Szabadon használható:</span>
+            <span class="note">- formázás</span>
+            <span class="note">- méretezés</span>
+            <span class="note">- pozícionálás</span>
+            <span class="note">- animáció</span>
+            <span class="note">- áttűnés</span>
+            <span class="note">- transzformáció</span>
+            <span class="note">- media query</span>
+            <span class="note">- pseudo elemek</span>
+            <span class="note">- lekerekített sarkok</span>
+            <span class="note">- árnyékok</span>
+            <span class="note">- stb.</span>
+          </td>
+          <td>5</td><td></td><td></td>
+        </tr>
+        <tr class="sum">
+          <td>Összpontszám:</td>
+          <td>30</td>
+          <td></td>
+          <td></td>
+        </tr>
+      </table>
+    </div>
+    <div>
+      <h2>Megjegyzés</h2>
+      <p>A hallgató opcionális megjegyzése a beadott feladathoz.</p>
+      <p>
+         Nincs.
+      </p>
+    </div>
+    <p> Közzétéve: 2017. 03. 18. </p>
+  </body>
+</html>

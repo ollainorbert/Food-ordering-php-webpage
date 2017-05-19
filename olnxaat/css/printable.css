@@ -1,0 +1,29 @@
+h3 {
+	color: orange;
+}
+
+p#kuponErtek {
+	text-align: center;
+	font-weight: bold;
+	font-size: 50px;
+	
+	color: orange;
+	z-index: 1;
+	
+	text-shadow: 2px 2px orangered;
+}
+
+article {
+	background-color: blue;
+	
+	border-radius: 10px 30px 10px 30px;
+}
+
+@media print {
+	header {
+		display: none;
+	}
+	footer {
+		display: none;
+	}
+}
